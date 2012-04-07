@@ -4,5 +4,7 @@
 <form method="POST" action="/login">
     <input type="text" name="email" id="email" class="placeholder text ui-widget-content ui-corner-all" placeholder="email@email.com">
     <input type="password" name="password" id="password" class="placeholder text ui-widget-content ui-corner-all" placeholder="password">
+    <!-- hidden field will pass in any redirect variables, empty value is OK too -->
+    <input type="hidden" name="redirect" value="<%= redirect %>">
     <input type="submit" value="Log Me In" class="glow text ui-widget-content ui-corner-all">
 </form>
